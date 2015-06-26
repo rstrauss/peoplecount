@@ -32,6 +32,9 @@ public class GetResults {
 	protected static NodeList nodes;
 	protected static byte automataState;
 
+	/**
+	 * @param args  Pass in the file name to parse
+	 */
 	public static void main(String[] args) {
 		automataState = QUESTION;
 		
@@ -43,6 +46,15 @@ public class GetResults {
 		
 		data = new ArrayList<Question>();
 		rawData = new ArrayList<NodeMaster>();
+		
+		// TODO: Make a class peoplecount.org.xml.XMLParser
+		// TODO:    and do: xmlDoc new XMLParser().parse(filename)
+		// TODO: If filename doesn't exist, throw a RuntimeExc FileNotFoundException (not the java one which isnt RuntimeExc)
+		// TODO: If the file is a/b/filename and a doesn't exist, say that, if b doesn't, etc.
+		// TODO:    so we know exactly which part of the path was wrong.
+		// TODO:    We should have our own File class extending the Java class with methods logErrorIfMissing() and throwIfMissing():  
+		// TODO:    We'll probably use this a lot.
+		// TODO: Have it catch exceptions, log them and return null
 		factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(false);
 		factory.setValidating(false);
@@ -71,7 +83,8 @@ public class GetResults {
 			e.printStackTrace();
 			return;
 		}
-		
+
+		// 
 		nodes = xmlDoc.getElementsByTagName("div");
 		filterNodes();
 		filterList();
@@ -101,12 +114,13 @@ public class GetResults {
 			System.out.println("Index " + index + ": " + rawData.get(index));
 		}
 	}/* */
-	
+
+	// TODO: 
 	private static void filterNodes() {
 		for(int index = 0; index < nodes.getLength(); index++) {
 			//System.out.println("fi-" + index);
 			NodeMaster meta = new NodeMaster(nodes.item(index));
-			if(meta.getNodeClass() == 0) {
+			if(meta.getNodeClass() == 0) {  // TODO: This is confusing- isData() is better
 				rawData.add(meta);
 			}
 		}

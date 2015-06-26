@@ -27,3 +27,6 @@ Click on: Clone a Git Repository
 URI:  https://github.com/rstrauss/peoplecount.git
 Put in your user and password.
 
+Also, in menu: View -> Show -> Tasks
+Look in the Tasks window (to the right of Problems) to see some things to fix.
+

@@ -8,7 +8,11 @@ import org.w3c.dom.Node;
  *
  */
 
+// TODO: Maybe call this ProfileResultNode instead
 public class NodeMaster {
+	// TODO: Instead of this, maybe have a private enum
+	//       
+	// TODO: Instead of returning it, have methods isUseless(), isData(), isDuplicate()
 	public static final byte USELESS_NODE = -1;
 	public static final byte DATA_NODE = 0;
 	public static final byte DUPLICATE_NODE = 1;
@@ -30,14 +34,15 @@ public class NodeMaster {
 		processString();
 	}
 	
+	// Nuke this - it isn't used
 	public Node getNode() { return meta; }	
-	public int getNodeClass() { return nodeClass; }
+	public int getNodeClass() { return nodeClass; }  // TODO: Nuke this when have isData
 	public boolean isPercent() { return isPercent; }
 	
 	public String toString() {
 		return nodeString;
 	}
-	
+
 	// TODO: maybe call this processTextContent() instead
 	// TODO: please put space after "if", so "if (", not "if(" - more standard
 	private void processString() {
