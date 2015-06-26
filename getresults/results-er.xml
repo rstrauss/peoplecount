@@ -1,0 +1,1217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.15), see www.w3.org" />
+<link rel="image_src" href=
+"https://icount.com/images/img_logo_tm.png" />
+<link rel="canonical" href=
+"https://icount.com/survey/results/id/6" />
+<meta property="og:title" content="icount" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content=
+"https://icount.com/images/img_logo_tm.png" />
+<meta property="og:site_name" content="icount" />
+<meta property="og:description" content="Renewable Energy" />
+<link rel="stylesheet" type="text/css" href=
+"/css/styles/grid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"/css/styles.css" />
+<script type="text/javascript" src="/js/mootools.js">
+</script>
+<script type="text/javascript" src="/js/more.js">
+</script>
+<script type="text/javascript" src="/js/classes.js">
+</script>
+<script type="text/javascript" src="/js/main.js">
+</script>
+<script type="text/javascript" src="/js/fusion/FusionMaps.js">
+</script>
+<script type="text/javascript" src=
+"https://apis.google.com/js/plusone.js">
+</script>
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<title>icount Renewable Energy</title>
+
+<script type="text/javascript">
+//<![CDATA[
+var _sf_startpt=(new Date()).getTime()
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17316043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+//]]>
+</script>
+</head>
+<body>
+<div id="head_wrap"><script src=
+"https://api.oneid.com/js/includeexternal.js" type=
+"text/javascript">
+</script><script type="text/javascript">
+//<![CDATA[
+    var fx1 = function(loggedIn) {
+        
+        if(loggedIn) {
+          // window.alert('logged in');
+           //OneId.login(); 
+        } else {
+           // window.alert('not logged in');
+        }
+            
+    };
+    var fx2 = function() {
+        OneId.isUserLoggedIn(fx1);
+    };
+    OneIdExtern.registerApiReadyFunction(fx2);
+//]]>
+</script><input type="hidden" value="11547" id="user_id" />
+<div id="header" class="container_12">
+<div class="grid_2" id="logo_wrap"><a href="/home"><img class=
+"logo" src="/images/logo.png" alt="icount" /></a></div>
+<div id="controls">
+<div class="grid_5" style="margin-top: 3px;"><a class="" href=
+"/home">Home</a>&nbsp;|&nbsp; <a class="" href="/network" title=
+"Create your network of political friends and contacts">Connections</a>&nbsp;|&nbsp;
+<a class="" href="/group" title=
+"Your links to communication for your city, state, and the nation">Groups</a>&nbsp;|&nbsp;
+<a class="" href="/user/dna" title=
+"Discover your political DNA and find matches">DNA</a> &nbsp;</div>
+<div class="search grid_3 nowrap align_right">
+<div style="width: 100%;float:left;">
+<form style="float:left" action="/search" method="get" id=
+"global_search_form" name="global_search_form"><input name=
+"search_term" id="global_search" type="text" alt="search" /></form>
+<img style="float:left;cursor:pointer" src=
+"/images/call_to_action/search.png" alt="search" onclick=
+"global_search();" /></div>
+<script type="text/javascript">
+//<![CDATA[
+    var global_search = function(){      
+        $('global_search_form').submit();
+    }
+//]]>
+</script></div>
+<div id="header_actions" class="grid_2 align_right">
+<div class="user_action">
+<div style="width:100%;float:left;">
+<div style="float:right;" id="header_settings_menu" class=
+"header_settings"><a href="/user" class="settings_menu">PeopleCount
+Strau&nbsp; <img src="/images/icons/downarrow.png" alt="" title=
+"settings" /></a>
+<div class="blue_box" id="settings_block">
+<ul>
+<li><a href="/tour">Tour</a></li>
+<li><a onclick="$('settings_block').setStyle('display','none');"
+href="/user#privacy">Privacy</a></li>
+<li><a href="/user">Edit Profile</a></li>
+<li><a href="/user/show/id/11547">View Profile</a></li>
+<li><a onclick="fb_logout();" href="javascript:void(0);">Sign
+Out</a></li>
+</ul>
+</div>
+</div>
+<div style="float:right;margin-top: 10px; margin-right: 5px;">
+<a title="messages" href="/conversation"><img src=
+"/images/tabs/message.png" height="10" alt="messages" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="feedback">
+<div id="feedback_tab"><a href=""><img src="/images/feedback3.png"
+title="Feedback" alt="Feedback" /></a></div>
+<form id="feedback_form" action="/revision/createFeedback/" name=
+"feedback_form">
+<div id="feedback_response" class="message"></div>
+<div class="form_row">
+<div class="label"><label for="revision_request_message">Send us
+your feedback</label></div>
+<div class="field align_right">
+<textarea rows="4" cols="30" class="no_mce" name=
+"revision_request[message]" id="revision_request_message">
+</textarea></div>
+</div>
+<input value="11547" type="hidden" name="revision_request[user_id]"
+id="revision_request_user_id" /> <input value=
+"rand@peoplecount.org" type="hidden" name="revision_request[email]"
+id="revision_request_email" /> <input type="hidden" name=
+"revision_request[id]" id="revision_request_id" /> <input type=
+"hidden" name="revision_request[location]" value=
+"https://icount.com/survey/results/id/6" />
+<div><button class="rounded left"><span>Send</span></button> <a id=
+"cancel_feedback" href="javascript:void(0);" name=
+"cancel_feedback">&nbsp;cancel</a></div>
+</form>
+</div>
+<!-- facebook initialization -->
+<div id="fb-root"></div>
+<script type="text/javascript" src=
+"https://connect.facebook.net/en_US/all.js">
+</script> <script type="text/javascript">
+//<![CDATA[
+    window.fbAsyncInit = function() { 
+        
+        if(!window.fbInitialized){
+            window.fbInitialized = true;
+            FB.init({appId: '162494443768449', status: true, cookie: true, xfbml: true});
+
+        }
+                FB.Event.subscribe('auth.logout', function (response) {
+                // if we have no response object then we are logged out
+                if(!response || !response['authResponse']){
+                    //loading();
+                    window.location = '/logout';
+                }
+                
+            });
+
+    };
+    function fb_login() {      
+        if(typeof FB !== 'undefined'){
+            FB.login(function(response) {
+                if(response && response['authResponse']){                 
+                    loading();
+                    window.location = '/openid/final';
+                }
+                
+            }, {scope:'email,user_birthday,user_about_me,user_location,friends_location'});
+        }
+    };
+    function fb_logout() { 
+        
+        if(typeof FB !== 'undefined'){
+            FB.logout(function(response) {
+                 window.location = '/logout';
+            });
+            window.location = '/logout';
+        }
+        window.location = '/logout';
+   
+        
+    };
+    function fb_share(){
+        if(typeof FB !== 'undefined'){
+            alert('fb share');
+        }
+    }
+    (function() {
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.src = 'https://connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    }());
+    
+    window.fbAsyncInit();
+//]]>
+</script> <!-- end facebook initialization --></div>
+<div id="wrap">
+<div id="container" class="container_12 clearfix">
+<div id="main_column" style="min-height:500px;">
+<!-- main content from pages -->
+<h1 class="underline no_bottom_margin">Renewable Energy<span class=
+"right">Issue: Energy</span></h1>
+<div class="left">77 users have answered this survey.</div>
+<div class="right"><a href="/survey/show/id/6">back to
+survey</a></div>
+<div class="clear"></div>
+<div class="clear"></div>
+<div style="width: 90%;" class="survey_header">
+<center>
+<div class="survey_info">PeopleCount</div>
+</center>
+<div class="default">
+<p><span style="font-size: small;">For the first question, hover
+the mouse over a level of the Knowledge or Importance meter to see
+the meaning of a level, then click to set it. &nbsp;Three of the
+twelve questions have 1-2 questions that ask about details. &nbsp;
+Click on the red "+ Show..." link to answer these
+questions.</span></p>
+<p><span style="font-size: small;">When finished, click the "Back
+to: PeopleCount" button at the top.</span></p>
+<p><span style="font-size: small;">You can return and change this
+political profile at any time.</span></p>
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="clear"></div>
+<div class="large_space"></div>
+<div class="survey list_style_two">
+<ol>
+<li class="bottom_divider">
+<div id="item_57" class="top_level_item">Should U.S. policy
+encourage more renewable energy production?</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">21%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>No, let the market decide</div>
+<!-- OptionCount=16 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">3%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, a bit</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">7%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes</div>
+<!-- OptionCount=5 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">69%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, a lot</div>
+<!-- OptionCount=52 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_58" class="top_level_item">About car and truck
+mile-per-gallon standards.</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">19%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Remove these regulations</div>
+<!-- OptionCount=14 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">3%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Roll back to the 2010 standards</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Keep the current standards</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">45%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Keep raising them steadily</div>
+<!-- OptionCount=33 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">29%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Raise them faster</div>
+<!-- OptionCount=21 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_59" class="top_level_item">About the new power of the
+E.P.A. the power to regulate greenhouse gases as pollutants:</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">25%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>It should be rescinded</div>
+<!-- OptionCount=18 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">0%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>It should not apply to existing power plants</div>
+<!-- OptionCount=0 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">1%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>It should only apply to the worst polluters</div>
+<!-- OptionCount=1 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">15%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>It should be used slowly</div>
+<!-- OptionCount=11 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">58%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>It should be used fully</div>
+<!-- OptionCount=41 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_60" class="top_level_item">About taxing power plants
+based on their greenhouse gas pollution:</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">23%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly oppose</div>
+<!-- OptionCount=16 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">3%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Oppose</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">0%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly oppose</div>
+<!-- OptionCount=0 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">3%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">7%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly support</div>
+<!-- OptionCount=5 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">21%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Support</div>
+<!-- OptionCount=15 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">44%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly support</div>
+<!-- OptionCount=31 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_61" class="top_level_item">Should we put solar panels
+on sunny public buildings and parking lots?</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">10%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>No</div>
+<!-- OptionCount=7 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">16%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes</div>
+<!-- OptionCount=11 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">21%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, slowly</div>
+<!-- OptionCount=15 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">53%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, quickly</div>
+<!-- OptionCount=37 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+<div style="margin-left:-15px;"><a class="red show_hide" showmsg=
+"+ Show more detailed questions" hidemsg=
+"- Hide more detailed questions" rel="subitems_61"></a></div>
+<div class="space"></div>
+<ol style="border-left: 1px solid #cccccc; padding-left: 5px;" id=
+"subitems_61">
+<li>
+<div id="item_63" class="item">Should only made-in-the-U.S.A. solar
+panels be put on public buildings and parking lots?</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">7%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Agree</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">23%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Agree</div>
+<!-- OptionCount=14 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">28%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=17 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">25%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Disagree</div>
+<!-- OptionCount=15 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">17%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Disagree</div>
+<!-- OptionCount=10 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li>
+<div id="item_64" class="item">We should allow private companies to
+lease public roofs and parking lots for solar panels.</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">35%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Agree</div>
+<!-- OptionCount=21 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">42%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Agree</div>
+<!-- OptionCount=25 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">17%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=10 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">2%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Disagree</div>
+<!-- OptionCount=1 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">5%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Disagree</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_62" class="top_level_item">Should we give tax breaks
+to renewable energy projects.</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">15%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Emphatically no</div>
+<!-- OptionCount=11 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">7%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>No</div>
+<!-- OptionCount=5 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">14%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Maybe</div>
+<!-- OptionCount=10 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">24%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes</div>
+<!-- OptionCount=17 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">39%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Emphatically yes</div>
+<!-- OptionCount=28 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_65" class="top_level_item">About the existing
+solar-power and wind-power equipment rebates to home-owners:</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">15%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Discontinue them</div>
+<!-- OptionCount=11 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">7%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Phase them out</div>
+<!-- OptionCount=5 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">44%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Continue them</div>
+<!-- OptionCount=32 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">33%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Raise them</div>
+<!-- OptionCount=24 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+<div style="margin-left:-15px;"><a class="red show_hide" showmsg=
+"+ Show more detailed questions" hidemsg=
+"- Hide more detailed questions" rel="subitems_65"></a></div>
+<div class="space"></div>
+<ol style="border-left: 1px solid #cccccc; padding-left: 5px;" id=
+"subitems_65">
+<li>
+<div id="item_70" class="item">We should only give solar and wind
+power rebates for equipment made in the U.S.</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Agree</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">16%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Agree</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">35%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=19 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">35%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Disagree</div>
+<!-- OptionCount=19 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">11%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Disagree</div>
+<!-- OptionCount=6 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_66" class="top_level_item">Should the US sign an
+international agreement to cut carbon emissions by year 2050</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">30%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>No</div>
+<!-- OptionCount=21 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, cut by 20%</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">13%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, cut by 40%</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">20%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, cut by 60%</div>
+<!-- OptionCount=14 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">11%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, cut by 80%</div>
+<!-- OptionCount=8 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">21%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Yes, cut by 90%</div>
+<!-- OptionCount=15 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_67" class="top_level_item">Should we create a public
+utility company to create or invest in U.S. renewable energy
+projects?</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">24%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly oppose</div>
+<!-- OptionCount=17 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">1%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Oppose</div>
+<!-- OptionCount=1 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly oppose</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">19%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=13 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">14%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly support</div>
+<!-- OptionCount=10 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">13%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Support</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">24%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly support</div>
+<!-- OptionCount=17 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+<div style="margin-left:-15px;"><a class="red show_hide" showmsg=
+"+ Show more detailed questions" hidemsg=
+"- Hide more detailed questions" rel="subitems_67"></a></div>
+<div class="space"></div>
+<ol style="border-left: 1px solid #cccccc; padding-left: 5px;" id=
+"subitems_67">
+<li>
+<div id="item_69" class="item">A renewable-energy public utility
+should only buy or invest in made-in-America equipment.</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">9%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Agree</div>
+<!-- OptionCount=5 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">22%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Agree</div>
+<!-- OptionCount=13 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">38%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=22 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">16%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Disagree</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">16%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly Disagree</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_97" class="top_level_item">About a CO2 Cap and Trade
+system (to cap CO2 production and make CO2 reduction projects
+valuable)</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">27%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly oppose</div>
+<!-- OptionCount=18 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">6%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Oppose</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">3%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly oppose</div>
+<!-- OptionCount=2 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">9%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=6 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">14%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly support</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">27%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Support</div>
+<!-- OptionCount=18 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">14%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly support</div>
+<!-- OptionCount=9 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_68" class="top_level_item">About plans like the Save
+Our Climate Act (taxes oil &amp; coal, gives the money to citizens)
+to make renewable energy competitive:</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">17%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly oppose</div>
+<!-- OptionCount=12 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">6%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Oppose</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">1%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly oppose</div>
+<!-- OptionCount=1 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">10%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Neutral</div>
+<!-- OptionCount=7 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">6%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Slightly support</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">32%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Support</div>
+<!-- OptionCount=22 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">28%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Strongly support</div>
+<!-- OptionCount=19 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+<li class="bottom_divider">
+<div id="item_95" class="top_level_item">Please rate this Renewable
+Energy profile (and add specifics to the comment)</div>
+<div class="survey_item_indent">
+<div class="survey_info"></div>
+<div style="width:100%;">
+<div class="clear"></div>
+<div class="opinion_options">
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">36%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Good</div>
+<!-- OptionCount=26 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">21%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs a little work</div>
+<!-- OptionCount=15 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">15%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs some work</div>
+<!-- OptionCount=11 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs a lot of work</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">0%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Too many questions</div>
+<!-- OptionCount=0 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">1%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Too many issues</div>
+<!-- OptionCount=1 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">5%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs more questions</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">8%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs more issues</div>
+<!-- OptionCount=6 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">4%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Needs more answers</div>
+<!-- OptionCount=3 --></div>
+<div class="clear"></div>
+<div class="opinion_option">
+<div class="left" style="width:40px;text-align: right;">5%</div>
+<div class="left" style="width:10px;">&nbsp;</div>
+<!-- Option -->
+<div>Other</div>
+<!-- OptionCount=4 --></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="survey_item_space"></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="large_space"></div>
+<div class="survey_footer default"></div>
+<div class="clear"></div>
+<p class="right">v.1357110510</p>
+<div class="clear"></div>
+<div class="clear"></div>
+</div>
+<div id="footer" class="align_center prefix_2 grid_8 suffix_2">
+<a href="/company/about">About</a>&nbsp;&nbsp; <a href=
+"/faq">FAQ</a>&nbsp;&nbsp; <a href="/news">News</a>&nbsp;&nbsp;
+<a href="/company/terms">Terms &amp; Conditions</a>&nbsp;&nbsp;
+<a href="/company/privacy">Privacy</a>&nbsp;&nbsp; <a href=
+"/revision">Contact</a>&nbsp;&nbsp; <a href=
+"/sitemap">Sitemap</a>&nbsp;&nbsp; <a target="_blank" href=
+"http://www.facebook.com/pages/ICount/109139075799238"><img alt=
+"Facebook" title="Facebook" src="/images/icons/facebook.png" /></a>
+&nbsp;&nbsp; <a target="_blank" href=
+"http://twitter.com/Icount_com"><img alt="Twitter" title="Twitter"
+src="/images/icons/twitter.png" /></a>
+<div id="copyright">&copy; Copyright 2010-2012 icount. All rights
+reserved</div>
+</div>
+</div>
+<!-- container -->
+<script type="text/javascript">
+//<![CDATA[
+/*
+var _sf_async_config={uid:12583,domain:"icount.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+*/
+//]]>
+</script></div>
+<div id="loading" style=
+"display:none;position:absolute;top:50%;left:45%;">
+<h1>loading...</h1>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+        function loading(){
+            body = $(document.body);
+            children = $(body).getChildren();
+            children.each(function (child) {
+                child.setStyle('opacity','.1');
+            });  
+
+            loadingdiv = $('loading') || null;
+            if(loadingdiv){
+                loadingdiv.setStyle('display','block');
+                loadingdiv.setStyle('opacity','1');
+            }
+        };
+        
+        window.addEvent('domready',function(){
+            $$('.facebook_pop_message').each(function(f){
+                var msg = new FacebookPopMessage(f);
+                f.removeClass('facebook_pop_message');
+            });
+        });
+//]]>
+</script>
+</body>
+</html>

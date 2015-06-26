@@ -1,0 +1,29 @@
+Eclipse:
+Menu: Window > Open Perspective > Other
+Uncheck: Group Items by Category
+Put into the top text box: http://download.eclipse.org/releases/luna
+Into the next big text box, put: team
+Check: Eclipse Git Team Provider
+Click: Next
+
+On the next page, you should see just: Eclipse Git Team Provider
+Click: Next
+
+On the next page, hit the radio button: Accept
+Click: Finish
+
+A little window will come up to restart.
+Click: Yes
+
+Menu: Eclipse > Preferences
+Open: Team and then Git
+Click: Configuration
+Under user, set your email and name
+
+Menu: Window > Open Perspective > Other
+Double click on:  Git
+Click on: Clone a Git Repository
+
+URI:  https://github.com/rstrauss/peoplecount.git
+Put in your user and password.
+
