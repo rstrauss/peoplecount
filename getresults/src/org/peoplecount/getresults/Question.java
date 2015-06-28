@@ -1,6 +1,5 @@
 package org.peoplecount.getresults;
 
-//import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -12,6 +11,7 @@ import java.util.ArrayList;
 public class Question {
 	protected String text;
 	protected int num;
+	protected int subNum;
 	protected long totalAnswers;
 	protected ArrayList<Question> SubQuestions;
 	protected ArrayList<QuestionAnswer> answers;
@@ -20,6 +20,7 @@ public class Question {
 		SubQuestions = new ArrayList<Question>();
 		answers = new ArrayList<QuestionAnswer>();
 		totalAnswers = 0;
+		subNum = 0;
 	}
 	
 	public Question(int num, String txt) {
@@ -28,6 +29,7 @@ public class Question {
 		answers = new ArrayList<QuestionAnswer>();
 		text = txt;
 		totalAnswers = 0;
+		subNum = 0;
 	}
 	
 	//adds an answer to the question
@@ -53,8 +55,18 @@ public class Question {
 	}
 	
 	public String toString() {
-		String retVal = "Question_" + num + ": " + text;
+		String retVal = "Question_" + num;
+		if(subNum != 0) {
+			retVal += "." + subNum;
+		}
+
+		retVal += ": " + text;
+
 		return retVal;
+	}
+	
+	public void setSubqNum(int i) {
+		subNum = i;
 	}
 	
 	public void printAnswers(int depth) {
@@ -70,7 +82,7 @@ public class Question {
 			for(int i = 0; i < depth; i++) {
 				System.out.print("--");
 			}
-			System.out.println(SubQuestions.get(index));
+			System.out.println("--" + SubQuestions.get(index));
 			SubQuestions.get(index).printAnswers(depth+1);
 		}
 	}
