@@ -7,29 +7,33 @@ package org.peoplecount.getresults;
  */
 
 public class QuestionAnswer {
-	protected String text;
-	protected long totalAnswers;
+	protected String answer;
+	protected int percentAnswered;
+	protected int numAnswered;
 	
-	public QuestionAnswer(String text, long totalAnswers) {
-		this.text = text;
-		this.totalAnswers = totalAnswers;
+	public QuestionAnswer(String text, int percent, int num) {
+		answer = text;
+		percentAnswered = percent;
+		numAnswered = num;
 	}
 	
 	public String getText() {
-		return text;
+		return answer;
 	}
 	
 	public long getTotalAnswers() {
-		return totalAnswers;
+		return percentAnswered;
 	}
 	
 	public String toString() {
 		String retVal = "Chosen by ";
-		if(totalAnswers < 10) {
+		if (numAnswered > 0) 
+			return numAnswered + " : " + answer;
+
+		if (percentAnswered < 10)
 			retVal += "0";
-		}
-		
-		retVal += totalAnswers + "%: " + text;
+
+		retVal += percentAnswered + "%: " + answer;
 		return retVal;
 	}
 }

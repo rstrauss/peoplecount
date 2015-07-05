@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 import org.w3c.dom.NodeList;
 
-public class GetProfileResults {
+public class GetProfileData {
 	private static int FILTER_OFFSET = 3;
 
-	GetProfileResults() {}
-	
+	GetProfileData() {}
+
 	ArrayList<Question> get(NodeList nodes) {
 		ArrayList<NodeMaster> rawData = new ArrayList<NodeMaster>();
 
@@ -140,7 +140,7 @@ public class GetProfileResults {
 			}
 
 			case ANSWER: {
-				qa = new QuestionAnswer(rawData.get(index).toString(), percent);
+				qa = new QuestionAnswer(rawData.get(index).toString(), percent, 0);
 				q.addAnswer(qa);
 
 				if (index == rawData.size()-1) {

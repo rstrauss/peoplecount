@@ -7,6 +7,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -61,6 +62,10 @@ public class PCXMLParser {
 	
 	public NodeList getElements() {
 		return xmlDoc.getElementsByTagName("*");
+	}
+	
+	public Element getMainElement() {
+		return xmlDoc.getDocumentElement();
 	}
 
 	private void setFeature(DocumentBuilderFactory factory, String feature, boolean value) {

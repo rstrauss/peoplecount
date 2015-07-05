@@ -3,8 +3,6 @@ package org.peoplecount.getresults;
 import java.io.File;
 import java.util.ArrayList;
 
-import org.w3c.dom.NodeList;
-
 /**
  * 
  * @author Benjy Strauss
@@ -81,8 +79,12 @@ public class GetResults {
 
 		// Parse the file and extract the data
 		pcParser = new PCXMLParser(f.getPath());
-		NodeList nodes = pcParser.getElements();
-		ArrayList<Question> data = new GetProfileResults().get(nodes);
+
+		ProfileResults profile = new ProfileResults();
+		ArrayList<Question> data = profile.fill(pcParser.getMainElement());
+
+		//NodeList nodes = pcParser.getElements();
+		//ArrayList<Question> data = new GetProfileData().get(nodes);
 
 		if (debug) {
 			printData(data);
@@ -91,10 +93,8 @@ public class GetResults {
 	}
 
 	private static void printData(ArrayList<Question> data) {
-		for (int index = 0; index < data.size(); index++) {
-			System.out.println(data.get(index));
-			data.get(index).printAnswers(0);
-		}
+		for (int index = 0; index < data.size(); index++)
+			data.get(index).print();
 	}
 	
 	
