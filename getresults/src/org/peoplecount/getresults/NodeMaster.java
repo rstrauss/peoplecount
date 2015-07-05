@@ -20,17 +20,16 @@ public class NodeMaster {
 	protected byte olLength;
 	
 	public NodeMaster(Node input) {
-		isPercent = true;
 		meta = input;
-		if(meta.getFirstChild() == null) {
+		if (meta.getFirstChild() == null) {
 			nodeClass = NodeType.USELESS;
 		} else {
 			nodeClass = NodeType.DATA;
 		}
 		
-		processString();
+		isPercent = processString();
 		
-		if(input.getNodeName() == "ol") {
+		if (input.getNodeName() == "ol") {
 			ol = true;
 			setOlLength();
 			nodeClass = NodeType.DATA;
@@ -40,46 +39,52 @@ public class NodeMaster {
 	}
 	
 
-	public Node getNode() { return meta; }	
-	public boolean isUseless() { if(nodeClass == NodeType.USELESS) { return true; } else { return false; } }
+	public Node getNode() { 
+		return meta;
+	}
+
+	public boolean isUseless() { 
+		return nodeClass == NodeType.USELESS;
+	}
+
 	public boolean isData() { if(nodeClass == NodeType.DATA) { return true; } else { return false; } }
 	public boolean isDuplicate() { if(nodeClass == NodeType.DUPLICATE) { return true; } else { return false; } }
 	public boolean isPercent() { return isPercent; }
-	public boolean ol() { return ol; }
+	public boolean isOlElement() { return ol; }
 	public byte olLength() { return olLength; }
 	
 	public String toString() {
 		return nodeString;
 	}
 
-	private void processString() {
-		if(meta.getNodeName() == "ol") {
+	private boolean processString() {
+		if (meta.getNodeName() == "ol") {
 			nodeString = "****OL****";
-			return;
+			return true; //???
 		}
 		
 		String processMe = meta.getTextContent();
 		nodeString = processMe.replace('\n',' ');
 		
-		if(nodeString.length() != 0) {
-			if(nodeString.charAt(0) == 32) {
+		if (nodeString.length() != 0) {
+			if (nodeString.charAt(0) == ' ') {
 				nodeClass = NodeType.DUPLICATE;
 			}
 		} else {
 			nodeClass = NodeType.USELESS;
-			isPercent = false;
+			return false;
 		}
 		
-		if(nodeClass == NodeType.DATA) {
-			for(int strIndex = 0; strIndex < nodeString.length(); strIndex++) {
-				if(nodeString.charAt(strIndex) < 48 || nodeString.charAt(strIndex) > 57) {
-					if(nodeString.charAt(strIndex) != 37) {
-						isPercent = false;
-						break;
-					}
+		if (nodeClass == NodeType.DATA) {
+			for (int strIndex = 0; strIndex < nodeString.length(); strIndex++) {
+				char c = nodeString.charAt(strIndex);
+				if (c < '0' || '9' < c) {
+					if (c != '%')
+						return false;
 				}
 			}
 		}
+		return true;
 	}
 	
 	private void setOlLength() {

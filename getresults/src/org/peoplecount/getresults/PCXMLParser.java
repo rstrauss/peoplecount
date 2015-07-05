@@ -25,39 +25,20 @@ import org.xml.sax.SAXException;
  */
 
 public class PCXMLParser {
-	protected DocumentBuilderFactory factory;
-	protected DocumentBuilder xparser;
 	protected Document xmlDoc;
 
 	public PCXMLParser(String fileName) {
+		DocumentBuilderFactory factory;
 		factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(false);
 		factory.setValidating(false);
 		
-		try {
-			factory.setFeature("http://xml.org/sax/features/namespaces", false);
-		} catch (ParserConfigurationException e) {
-			System.out.println("Parser Configuration Exception: http://xml.org/sax/features/namespaces could not be set to 'false'.");
-		}
-			
-		try {	
-			factory.setFeature("http://xml.org/sax/features/validation", false);
-		} catch (ParserConfigurationException e) {
-			System.out.println("Parser Configuration Exception: http://xml.org/sax/features/validation could not be set to 'false'.");
-		}
+		setFeature(factory, "http://xml.org/sax/features/namespaces", false);
+		setFeature(factory, "http://xml.org/sax/features/validation", false);
+		setFeature(factory, "http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+		setFeature(factory, "http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 		
-		try {
-			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
-		} catch (ParserConfigurationException e) {
-			System.out.println("Parser Configuration Exception: http://apache.org/xml/features/nonvalidating/load-dtd-grammar could not be set to 'false'.");
-		}
-		
-		try {
-			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
-		} catch (ParserConfigurationException e) {
-			System.out.println("Parser Configuration Exception: http://apache.org/xml/features/nonvalidating/load-external-dtd could not be set to 'false'.");
-		}
-		
+		DocumentBuilder xparser = null;
 		try {
 			xparser = factory.newDocumentBuilder();
 		} catch (ParserConfigurationException e) {
@@ -75,11 +56,18 @@ public class PCXMLParser {
 		} catch (IOException e) {
 			System.out.println("Error: IO Exception in parsing.");
 			e.printStackTrace();
-
 		}
 	}
 	
 	public NodeList getElements() {
 		return xmlDoc.getElementsByTagName("*");
+	}
+
+	private void setFeature(DocumentBuilderFactory factory, String feature, boolean value) {
+		try {
+			factory.setFeature(feature, false);
+		} catch (ParserConfigurationException e) {
+			System.out.println("Parser Configuration Exception: "+feature+" could not be set to: "+value);
+		}
 	}
 }
