@@ -132,7 +132,7 @@ public class Question extends XmlElementUtils {
 		if (subQuestions == null)
 			return;
 		for (int i = 0; i < subQuestions.size(); i++)
-			subQuestions.get(i).setSubqNum(val, i);
+			subQuestions.get(i).setSubqNum(val, i+1);
 			
 	}
 	public void setSubqNum(int i) {

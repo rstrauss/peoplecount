@@ -73,6 +73,11 @@ public class GetResults {
 		System.err.println("getDataFromFiles(folder) is not yet implemented");
 	}
 
+	/**
+	 * 
+	 * @param debug: If debug mode is enabled
+	 * @param f: The file to get the data from
+	 */
 	static void getDataFromAFile(boolean debug, File f) {
 		if (debug)
 			System.out.println("Data:");
