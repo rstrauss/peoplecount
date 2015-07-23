@@ -47,35 +47,37 @@ public class Question extends XmlElementUtils {
 		text = div.getTextContent().trim();
 		text = text.replace('\n', ' ');
 		text = text.replace('\r', ' ');
-		dpr("Got question: "+text);
+		//dpr("Got question: "+text);
 
 		div = getNextElement(div, DIV);  // class="survey_item_indent"
-		printElt("qFill, div(survey_item_indent)", div);
+		//printElt("qFill, div(survey_item_indent)", div);
 
 		Element liChild = getFirstElement(div); // <div class="survey_info"></div>
-		printElt("qFill, div(survey_info)", liChild);
+		//printElt("qFill, div(survey_info)", liChild);
 
 		liChild = getNextElement(liChild, DIV);  // <div style="width:100%;">
-		printElt("qFill, div()", liChild);
+		//printElt("qFill, div()", liChild);
 		
 		div = getFirstElement(liChild);
-		printElt("qFill, div(clear)", div);
+		//printElt("qFill, div(clear)", div);
 		div = getNextElementOfClass(div, DIV, "opinion_options");
-		printElt("qFill, div(opinion_options)", div);
+		//printElt("qFill, div(opinion_options)", div);
 		
 		NodeList options = div.getElementsByTagName("div");
 		for (int i = 0;  i < options.getLength(); i++) {
 			Node item = options.item(i);
 			String clas = getClassAttribute((Element)item);
-			if (!clas.equals("opinion_option"))
+			if (!clas.equals("opinion_option")) {
 				continue;
+			}
 			
 			getOneAnswer(item);
 		}
 		
 		liChild = getNextElement(liChild, OL);
-		if (liChild == null)
+		if (liChild == null) {
 			return; // no nested questions
+		}
 
 		Element nestedLi = getFirstElement(liChild);
 		subQuestions = processQuestionList(nestedLi);
@@ -103,15 +105,20 @@ public class Question extends XmlElementUtils {
 			}
 			comment = comment.getNextSibling();
 		}
-		QuestionAnswer ans = new QuestionAnswer(optionText, 0, numVotesOnOption);
-		dpr("Got answer: "+optionText);
-		answers.add(ans);
+		QuestionAnswer ans = new QuestionAnswer(optionText, numVotesOnOption);
+		//dpr("Got answer: "+optionText);
+		addAnswer(ans);
+		
+	}
+
+	private void quickPrint(String str) {
+		System.out.println(str);
 	}
 
 	//adds an answer to the question
 	public void addAnswer(QuestionAnswer ans) {
 		answers.add(ans);
-		numVotes += ans.getTotalAnswers();
+		numVotes += ans.chosenBy();
 	}
 	
 	public void addSubQuestion(Question subq) {
@@ -135,6 +142,7 @@ public class Question extends XmlElementUtils {
 			subQuestions.get(i).setSubqNum(val, i+1);
 			
 	}
+	
 	public void setSubqNum(int i) {
 		subNum = i;
 	}
@@ -144,11 +152,7 @@ public class Question extends XmlElementUtils {
 		subNum = subn;
 	}
 
-	public void print() {
-		print("");
-	}
-
-	private void print(String prefix) {
+	protected void print(String prefix) {
 		System.out.print(prefix);
 		System.out.println(this);
 
@@ -161,5 +165,26 @@ public class Question extends XmlElementUtils {
 		// print out all the subquestions
 		for (index = 0; index < subQuestions.size(); index++)
 			subQuestions.get(index).print(prefix);
+	}
+
+	public int num() { return num; }
+	public int subNum() { return subNum; }
+	public String getName() { return text; }
+	public long numVotes() { return numVotes; }
+	
+	public Question getSubQuestion(int i) {
+		if(i < subQuestions.size() && i > -1) {
+			return subQuestions.get(i);
+		} else {
+			return null;
+		}
+	}
+
+	public QuestionAnswer getQAnswer(int i) {
+		if(i < answers.size() && i > -1) {
+			return answers.get(i);
+		} else {
+			return null;
+		}
 	}
 }

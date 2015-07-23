@@ -1,6 +1,9 @@
 package org.peoplecount.getresults;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
@@ -11,6 +14,7 @@ import java.util.ArrayList;
 
 public class GetResults {
 	protected static PCXMLParser pcParser;
+	private static String readName;
 
 	static void err(String msg) {
 		System.err.println("  ERROR: "+msg);
@@ -50,6 +54,7 @@ public class GetResults {
 					err("Already have filename='"+f.getPath()+"', extra arg: "+arg);
 
 				f = new File(arg);
+				readName = arg;
 				if (!f.exists())
 					err("File doesn't exist: "+arg);
 				if (!f.canRead())
@@ -79,28 +84,34 @@ public class GetResults {
 	 * @param f: The file to get the data from
 	 */
 	static void getDataFromAFile(boolean debug, File f) {
-		if (debug)
-			System.out.println("Data:");
-
+			
 		// Parse the file and extract the data
 		pcParser = new PCXMLParser(f.getPath());
 
 		ProfileResults profile = new ProfileResults();
 		ArrayList<Question> data = profile.fill(pcParser.getMainElement());
-
-		//NodeList nodes = pcParser.getElements();
-		//ArrayList<Question> data = new GetProfileData().get(nodes);
-
-		if (debug) {
-			printData(data);
-			System.out.println("Completed.");
+		
+		PCHTMLWriter htmlGen = new PCHTMLWriter(data);
+		String html = htmlGen.getHTML();
+		PrintWriter writer = null;
+		
+		/* create a file (readName).html
+		 * write the html to it.
+		 */
+		try {
+			writer = new PrintWriter(readName + ".html", "UTF-8");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
 		}
+		writer.println(html);
+		writer.close();
 	}
 
 	private static void printData(ArrayList<Question> data) {
-		for (int index = 0; index < data.size(); index++)
-			data.get(index).print();
+		for (int index = 0; index < data.size(); index++) {
+			data.get(index).print("");
+		}
 	}
-	
-	
 }

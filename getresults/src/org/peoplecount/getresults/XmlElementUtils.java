@@ -89,7 +89,7 @@ public class XmlElementUtils {
 	}
 
 	protected ArrayList<Question> processQuestionList(Element li) {
-		printElt("processQuestionList, li=", li);
+		//printElt("processQuestionList, li=", li);
 		ArrayList<Question> questions = new ArrayList<Question>();
 		while (li != null) {
 			Question q = new Question();

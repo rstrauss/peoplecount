@@ -8,32 +8,40 @@ package org.peoplecount.getresults;
 
 public class QuestionAnswer {
 	protected String answer;
-	protected int percentAnswered;
 	protected int numAnswered;
+	private int percent;
+	
+	public QuestionAnswer(String text, int num) {
+		answer = text;
+		numAnswered = num;
+	}
 	
 	public QuestionAnswer(String text, int percent, int num) {
 		answer = text;
-		percentAnswered = percent;
 		numAnswered = num;
+		this.percent = percent;
 	}
 	
 	public String getText() {
 		return answer;
 	}
 	
-	public long getTotalAnswers() {
-		return percentAnswered;
+	public int chosenBy() {
+		return numAnswered;
+	}
+	
+	public int chosenByPercent() {
+		return percent;
 	}
 	
 	public String toString() {
 		String retVal = "Chosen by ";
-		if (numAnswered > 0) 
-			return numAnswered + " : " + answer;
+		if (numAnswered > 0)  {
+			retVal += answer;
+		} else {
+			return "Data is corrupt.";
+		}
 
-		if (percentAnswered < 10)
-			retVal += "0";
-
-		retVal += percentAnswered + "%: " + answer;
 		return retVal;
 	}
 }
