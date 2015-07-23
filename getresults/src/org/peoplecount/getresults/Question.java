@@ -12,7 +12,7 @@ import org.w3c.dom.NodeList;
  *
  */
 
-public class Question extends XmlElementUtils {
+public class Question extends QuestionElementUtils {
 	protected String text;
 	protected int num;    // The question number, like 5 for:  5. Which way is up?
 	protected int subNum; // The second number, like 1 in 5.1. Which way is up?
@@ -109,10 +109,6 @@ public class Question extends XmlElementUtils {
 		//dpr("Got answer: "+optionText);
 		addAnswer(ans);
 		
-	}
-
-	private void quickPrint(String str) {
-		System.out.println(str);
 	}
 
 	//adds an answer to the question

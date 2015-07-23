@@ -1,17 +1,44 @@
 package org.peoplecount.getresults;
 
-import java.util.ArrayList;
-
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
+/**
+ * This should rely only on dom library- it should be for any program's XML file.
+ * 
+ * It just makes traversing an XML file easier.
+ */
 public class XmlElementUtils {
-	static boolean debug = true;
+	static private boolean debug = true;
+	static private boolean verbose = false;
 	
 	static final protected String DIV = "div";
 	static final protected String LI = "li";
 	static final protected String OL = "ol";
+
+	static boolean classIsDebug() {
+		return debug;
+	}
+	
+	void setDebug(boolean val) {
+		debug = val;
+		verbose = false;
+	}
+
+	void setVerbose(boolean val) {
+		verbose = val;
+		if (verbose)
+			debug = true;
+	}
+
+	boolean isDebug() {
+		return debug;
+	}
+
+	protected boolean isVerboseDebug() {
+		return debug && verbose;
+	}
 
 	protected void pr(String msg) {
 		System.out.println(msg);
@@ -20,6 +47,11 @@ public class XmlElementUtils {
 	protected void dpr(String msg) {
 		if (debug)
 			System.out.println(msg);
+	}
+
+	protected void vpr(String msg) {
+		if (verbose)
+			dpr(msg);
 	}
 
 	protected void printElt(String method, Node node) {
@@ -86,18 +118,6 @@ public class XmlElementUtils {
 			node = node.getPreviousSibling();
 
 		return (Element)node;
-	}
-
-	protected ArrayList<Question> processQuestionList(Element li) {
-		//printElt("processQuestionList, li=", li);
-		ArrayList<Question> questions = new ArrayList<Question>();
-		while (li != null) {
-			Question q = new Question();
-			q.fill(li);
-			questions.add(q);
-			li = getNextElement(li, "li");
-		}
-		return questions;
 	}
 
 	// This is mainly for reference...

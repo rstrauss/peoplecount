@@ -84,31 +84,25 @@ public class GetResults {
 	 * @param f: The file to get the data from
 	 */
 	static void getDataFromAFile(boolean debug, File f) {
-			
-		// Parse the file and extract the data
-		pcParser = new PCXMLParser(f.getPath());
-
-		ProfileResults profile = new ProfileResults();
-		ArrayList<Question> data = profile.fill(pcParser.getMainElement());
+		ProfileResults profile = new ProfileResults(f.getAbsolutePath());
+		profile.create();
 		
-		PCHTMLWriter htmlGen = new PCHTMLWriter(data);
-		String html = htmlGen.getHTML();
-		PrintWriter writer = null;
+		PCHTMLWriter htmlGen = new PCHTMLWriter();
+		String html = htmlGen.getHTML(profile);
 		
-		/* create a file (readName).html
-		 * write the html to it.
-		 */
+		// create a file (readName).html & write it
 		try {
-			writer = new PrintWriter(readName + ".html", "UTF-8");
+			PrintWriter writer = new PrintWriter(readName + ".html", "UTF-8");
+			writer.println(html);
+			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		writer.println(html);
-		writer.close();
 	}
 
+	@SuppressWarnings("unused")
 	private static void printData(ArrayList<Question> data) {
 		for (int index = 0; index < data.size(); index++) {
 			data.get(index).print("");

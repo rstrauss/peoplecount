@@ -8,16 +8,29 @@ package org.peoplecount.getresults;
  *
  */
 
-public abstract class TagLib {
+public class TagLib {
 	protected static final String doctype = "<!DOCTYPE html>\n";
-	protected static final String body = "<body>\n";
-	protected static final String _body = "</body>\n";
-	protected static final String head = "<head lang=\"en-US\">\n";
-	protected static final String _head = "</head>\n";
-	protected static final String html = "<html>\n";
-	protected static final String _html = "</html>\n";
 	protected static final String horizontalLine = "<hr></hr>\n";
 	protected static final String newLine = "<br></br>";
+	
+	private String startTag(String tag) {
+		return startTag(tag, null);
+	}
+
+	private String startTag(String tag, String attrs) {
+		if (attrs == null)
+			attrs = "";
+		StringBuffer sb = new StringBuffer(tag.length() + 4 + attrs.length());
+		sb.append('<').append(tag);
+		if (attrs != null && attrs.length() > 0)
+			sb.append(' ').append(attrs);
+		sb.append(">\n");
+		return attrs;
+	}
+	
+	private String endTag(String tag) {
+		return "</" + tag + ">\n";
+	}
 	
 	/**
 	 * Turns input into a head tag
@@ -25,9 +38,8 @@ public abstract class TagLib {
 	 * @return
 	 */
 	protected String makeHead(String input) {
-		String retVal = head;
-		retVal += input;
-		retVal += _head;
+		String head = "head";
+		String retVal = startTag(head, "lang=\"en-US\"") + input + endTag(head);
 		return retVal;
 	}
 	
@@ -37,9 +49,8 @@ public abstract class TagLib {
 	 * @return
 	 */
 	protected String makeBody(String input) {
-		String retVal = body;
-		retVal += input;
-		retVal += _body;
+		String body = "body";
+		String retVal = startTag(body) + input + endTag(body);
 		return retVal;
 	}
 	
@@ -50,10 +61,8 @@ public abstract class TagLib {
 	 * @return
 	 */
 	protected String makeIntoHTMLDoc(String head, String body) {
-		String retVal = doctype + html;
-		retVal += makeHead(head);
-		retVal += makeBody(body);
-		retVal += _html;
+		String html = "html";
+		String retVal = doctype + startTag(html) + makeHead(head) + makeBody(body) + endTag(html);
 		return retVal;
 	}
 }

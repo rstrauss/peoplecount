@@ -9,62 +9,27 @@ import java.util.ArrayList;
  *
  */
 
-public class PCHTMLWriter extends TagLib {
-	protected ArrayList<Question> data;
+public class PCHTMLWriter extends XmlElementUtils {
 	private static final int BAR_SCALE = 3;
 	private static final int BAR_HEIGHT = 20;
+	TagLib tagLib = new TagLib();
 	
 	//create a new PeopleCountHTMLWriter
 	public PCHTMLWriter() {
-		data = new ArrayList<Question>();
 	}
 	
-	//create a new PeopleCountHTMLWriter with preset questions
-	public PCHTMLWriter(ArrayList<Question> data) {
-		this.data = data;
-	}
-	
-	//sets the data
-	public void setData(ArrayList<Question> data) {
-		this.data = data;
-	}
-	
-	/**
-	 * 	protected static final String doctype = "<!DOCTYPE html>\n";
-	protected static final String body = "<body>\n";
-	protected static final String _body = "</body>\n";
-	protected static final String head = "<head lang=\"en-US\">\n";
-	protected static final String _head = "</head>\n";
-	protected static final String html = "<html>\n";
-	protected static final String _html = "</html>\n";
-	protected static final String horizontalLine = "<hr></hr>\n";
-	protected static final String newLine = "<br></br>";
-	 * @return
-	 */
-	
-	public String getHTML() {
-		String output = doctype;
-		output += html;
-		output += head;
-		output += _head;
-		output += body;
-		
-		/**
-		 * Process the questions in the array list
-		 */
+	public String getHTML(ProfileResults profile) {
+		String content = "";
+
+		ArrayList<Question> data = profile.getQuestionDataList();
 		for(int aa = 0; aa < data.size(); aa++) {
-			output += processQuestion(data.get(aa));
+			content += processQuestion(data.get(aa));
 		}
 		
-		output += _body;
-		output += _html;
-		
-		quickPrint(output);
+		String output = tagLib.makeIntoHTMLDoc("", content);
+		if (isVerboseDebug())
+			pr(output);
 		return output;
-	}
-	
-	private void quickPrint(String str) {
-		System.out.println(str);
 	}
 	
 	/**
